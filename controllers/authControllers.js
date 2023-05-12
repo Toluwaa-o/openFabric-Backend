@@ -15,7 +15,11 @@ const register = async (req, res) => {
     const tokenUser = { userId: user._id, role: user.role }
     await attachCookies({res, user: tokenUser})
 
+<<<<<<< HEAD
     res.status(201).json({ user: userData })
+=======
+    res.status(201).json({ user: {name: user.name, email: user.email, _id: user._id, role: user.role } })
+>>>>>>> 8057c0ea8669d0b17ba8a5f53c823425889d1f39
 }
 
 const login = async (req, res) => {
@@ -36,7 +40,11 @@ const login = async (req, res) => {
 
     await attachCookies({res, user: tokenUser})
 
+<<<<<<< HEAD
     res.status(200).json({ user: userData })
+=======
+    res.status(200).json({ user: {name: user.name, email: user.email, _id: user._id, role: user.role })
+>>>>>>> 8057c0ea8669d0b17ba8a5f53c823425889d1f39
 }
 
 const logout = async (req, res) => {

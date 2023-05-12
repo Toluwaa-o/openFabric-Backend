@@ -29,7 +29,11 @@ mongoose.set('strictQuery', false)
 app.use(cors({
     credentials: true,
     origin: 'http://localhost:3000'
+<<<<<<< HEAD
     }))
+=======
+    ))
+>>>>>>> 8057c0ea8669d0b17ba8a5f53c823425889d1f39
 app.use(helmet())
 app.use(xss())
 app.use(mongoSanitize())
