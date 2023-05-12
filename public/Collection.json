@@ -24,7 +24,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/auth/login",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/auth/login",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -51,7 +51,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/auth/signup",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/auth/signup",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -69,7 +69,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/auth/logout",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/auth/logout",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -93,7 +93,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -111,7 +111,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users/645c3a53ac2770bbd2d015e1",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users/645c3a53ac2770bbd2d015e1",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -129,7 +129,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users/show-user",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users/show-user",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -156,7 +156,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -183,7 +183,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users/change-password",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users/change-password",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -201,7 +201,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/users",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/users",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -223,7 +223,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -251,7 +251,7 @@
 							]
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/upload-image",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/upload-image",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -278,7 +278,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -296,7 +296,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/645d931f67227622afd5b54e",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -323,7 +323,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/645d931f67227622afd5b54e",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -341,7 +341,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/645d931f67227622afd5b54e",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -359,7 +359,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d9eaeea7e38373cac1d4f/reviews",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/products/645d9eaeea7e38373cac1d4f/reviews",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -392,7 +392,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/reviews",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/reviews",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -418,7 +418,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645d9f0cea7e38373cac1d52",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/reviews/645d9f0cea7e38373cac1d52",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -436,7 +436,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645d9f0cea7e38373cac1d52",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/reviews/645d9f0cea7e38373cac1d52",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -454,7 +454,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645db69fb1f2a8c84ec858f1",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/reviews/645db69fb1f2a8c84ec858f1",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -477,7 +477,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/orders/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/orders/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -495,7 +495,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/orders/all-orders",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/orders/all-orders",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -522,7 +522,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/orders/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/orders/",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -540,7 +540,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/orders/645dc20c4319d8d92057f18d",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/orders/645dc20c4319d8d92057f18d",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
@@ -567,7 +567,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://openfabric-backend-rtee.onrender.com/orders/645dc20c4319d8d92057f18d",
+							"raw": "https://openfabric-backend-rtee.onrender.com/api/v1/orders/645dc20c4319d8d92057f18d",
 							"host": [
 								"https://openfabric-backend-rtee.onrender.com"
 							],
