@@ -6,7 +6,8 @@ const checkPermissions = require('../utils/checkPermission')
 const updateUser = async (req, res) => {
     const user = await User.findOneAndUpdate({_id: req.user.userId}, req.body, {new: true, runValidators: true})
 
-    res.status(200).json({ user })
+
+    res.status(200).json({ msg: 'User successfully updated' })
 }
 
 const showCurrentUser = async (req, res) => {
@@ -28,7 +29,9 @@ const changePassword = async (req, res) => {
     user.password = newPassword
     await user.save()
 
-    res.status(200).json({ user })
+    const userData = {name: user.name, email: user.email, _id: user._id, role: user.role}
+
+    res.status(200).json({ user: userData })
 }
 
 const getAllUsers = async (req, res) => {
@@ -42,7 +45,7 @@ const getAllUsers = async (req, res) => {
 const getSingleUser = async (req, res) => {
     const { id } = req.params
 
-    const user = await User.findOne({_id: id})
+    const user = await User.findOne({_id: id}).select('-password')
     if(!user) throw new CustomErrors.NotFound(`No user found with id ${id}`)
 
     checkPermissions(req.user, id)

@@ -11,10 +11,11 @@ const register = async (req, res) => {
     const role = isFirstSecond ? 'admin' : 'user'
 
     const user = await User.create({ name, email, password, role })
+    const userData = {name: user.name, email: user.email, _id: user._id, role: user.role}
     const tokenUser = { userId: user._id, role: user.role }
     await attachCookies({res, user: tokenUser})
 
-    res.status(201).json({ user })
+    res.status(201).json({ user: userData })
 }
 
 const login = async (req, res) => {
@@ -30,11 +31,12 @@ const login = async (req, res) => {
 
     if(!passwordMatch) throw new CustomErrors.Unauthenticated(`Incorrect login credentials`)
 
+    const userData = {name: user.name, email: user.email, _id: user._id, role: user.role}
     const tokenUser = { userId: user._id, role: user.role }
 
     await attachCookies({res, user: tokenUser})
 
-    res.status(200).json({ user })
+    res.status(200).json({ user: userData })
 }
 
 const logout = async (req, res) => {

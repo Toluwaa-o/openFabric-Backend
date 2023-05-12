@@ -26,7 +26,10 @@ const app = express()
 
 //middleware
 mongoose.set('strictQuery', false)
-app.use(cors())
+app.use(cors({
+    credentials: true,
+    origin: 'http://localhost:3000'
+    }))
 app.use(helmet())
 app.use(xss())
 app.use(mongoSanitize())
