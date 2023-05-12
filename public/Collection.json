@@ -24,9 +24,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/auth/login",
+							"raw": "https://openfabric-backend-rtee.onrender.com/auth/login",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"auth",
@@ -51,9 +51,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/auth/signup",
+							"raw": "https://openfabric-backend-rtee.onrender.com/auth/signup",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"auth",
@@ -69,9 +69,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/auth/logout",
+							"raw": "https://openfabric-backend-rtee.onrender.com/auth/logout",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"auth",
@@ -93,9 +93,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users",
@@ -111,9 +111,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users/645c3a53ac2770bbd2d015e1",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users/645c3a53ac2770bbd2d015e1",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users",
@@ -129,9 +129,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users/show-user",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users/show-user",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users",
@@ -156,9 +156,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/users/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users",
@@ -183,9 +183,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/users/change-password",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users/change-password",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users",
@@ -201,9 +201,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users",
+							"raw": "https://openfabric-backend-rtee.onrender.com/users",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"users"
@@ -223,9 +223,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -251,9 +251,9 @@
 							]
 						},
 						"url": {
-							"raw": "{{URL}}/products/upload-image",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/upload-image",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -278,9 +278,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/products/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -296,9 +296,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -323,9 +323,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -341,9 +341,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/645d931f67227622afd5b54e",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d931f67227622afd5b54e",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -359,9 +359,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/645d9eaeea7e38373cac1d4f/reviews",
+							"raw": "https://openfabric-backend-rtee.onrender.com/products/645d9eaeea7e38373cac1d4f/reviews",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"products",
@@ -392,9 +392,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/reviews",
+							"raw": "https://openfabric-backend-rtee.onrender.com/reviews",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"reviews"
@@ -418,9 +418,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/reviews/645d9f0cea7e38373cac1d52",
+							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645d9f0cea7e38373cac1d52",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"reviews",
@@ -436,9 +436,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/reviews/645d9f0cea7e38373cac1d52",
+							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645d9f0cea7e38373cac1d52",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"reviews",
@@ -454,9 +454,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/reviews/645db69fb1f2a8c84ec858f1",
+							"raw": "https://openfabric-backend-rtee.onrender.com/reviews/645db69fb1f2a8c84ec858f1",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"reviews",
@@ -477,9 +477,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/orders/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"orders",
@@ -495,9 +495,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders/all-orders",
+							"raw": "https://openfabric-backend-rtee.onrender.com/orders/all-orders",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"orders",
@@ -522,9 +522,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/orders/",
+							"raw": "https://openfabric-backend-rtee.onrender.com/orders/",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"orders",
@@ -540,9 +540,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders/645dc20c4319d8d92057f18d",
+							"raw": "https://openfabric-backend-rtee.onrender.com/orders/645dc20c4319d8d92057f18d",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"orders",
@@ -567,9 +567,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/orders/645dc20c4319d8d92057f18d",
+							"raw": "https://openfabric-backend-rtee.onrender.com/orders/645dc20c4319d8d92057f18d",
 							"host": [
-								"{{URL}}"
+								"https://openfabric-backend-rtee.onrender.com"
 							],
 							"path": [
 								"orders",
