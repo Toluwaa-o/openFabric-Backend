@@ -28,7 +28,7 @@ const app = express()
 mongoose.set('strictQuery', false)
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:3000'
+    origin: '*'
     }))
 app.use(helmet())
 app.use(xss())
