@@ -120,7 +120,7 @@ const uploadImage = async (req, res) => {
 
     await prodImage.mv(imagePath)
 
-    res.status(200).json({ src: `/products/${prodImage.name}` })
+    res.status(200).json({ src: `https://openfabric-backend-rtee.onrender.com/products/${prodImage.name}` })
 }
 
 module.exports = { getAllProducts, getSingleProduct, addProduct, deleteProduct, updateProduct, uploadImage }
