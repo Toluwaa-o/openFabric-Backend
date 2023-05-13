@@ -15,9 +15,11 @@ const getAllProducts = async (req, res) => {
 
     if(numFilter) {
         const operatorMap = {
-            '>':'$gte',
+            '>':'$gt',
+            '<':'$lt',
+            '>=':'$gte',
             '=':'$eq',
-            '<':'$lte',
+            '<=':'$lte',
         }
 
         const regEx = /\b(<|>|>=|<=|=)\b/g
@@ -25,7 +27,7 @@ const getAllProducts = async (req, res) => {
 
         const options = ['price', 'averageRating']
 
-        filters = filters.split('%2C').forEach(i => {
+        filters = filters.split(',').forEach(i => {
             const [field, operator, value] = i.split('-')
             if(options.includes(field)) {
                 queryObject[field] = {[operator]: Number(value)}
