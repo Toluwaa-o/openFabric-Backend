@@ -117,7 +117,7 @@ const uploadImage = async (req, res) => {
 
     if(prodImage.size > max) throw new CustomErrors.BadRequest('Image cannot be bigger than 1mb')
 
-    const result = await cloudinary.uploader.upload(req.files.image.tempFilePath, {
+    const result = await cloudinary.uploader.upload(prodImage.tempFilePath, {
         use_filename: true,
         folder: 'file uploads'
     })
