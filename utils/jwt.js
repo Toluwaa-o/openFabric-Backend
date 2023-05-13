@@ -18,7 +18,8 @@ const attachCookies = async ({res, user}) => {
         httpOnly: true, 
         expires: new Date(Date.now() + aDay),
         secure: process.env.NODE_ENV === 'production',
-        signed: true
+        signed: true,
+        sameSite: 'none'
     })
 }
 

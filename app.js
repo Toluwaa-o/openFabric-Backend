@@ -32,11 +32,16 @@ const app = express()
 
 //middleware
 mongoose.set('strictQuery', false)
+app.set('trust proxy', 1)
 app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:3000'
+    origin: 'http://localhost:3000',
+    credentials: true
     }))
-app.use(helmet())
+
+app.use(helmet({
+    crossOriginResourcePolicy: {policy: "cross-origin"},
+    crossOriginEmbedderPolicy: false
+    }))
 app.use(xss())
 app.use(mongoSanitize())
 

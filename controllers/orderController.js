@@ -33,7 +33,7 @@ const createOrder = async (req, res) => {
 }
 
 const getAllUserOrders = async (req, res) => {
-    const order = await Order.find({user: req.user.userId})
+    const order = await Order.find({user: req.user.userId}).populate({path: 'product', select: 'title category price'})
 
     if(!order || order.length < 1) throw new CustomErrors.NotFound('No orders found')
 
