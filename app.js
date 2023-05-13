@@ -33,7 +33,8 @@ app.use(cors({
     }))
 
 app.use(helmet({
-      crossOriginResourcePolicy: false,
+    crossOriginResourcePolicy: false,
+    crossOriginEmbedderPolicy: false
     }))
 app.use(xss())
 app.use(mongoSanitize())
