@@ -33,7 +33,7 @@ app.use(cors({
     }))
 
 app.use(helmet({
-    crossOriginResourcePolicy: false,
+    crossOriginResourcePolicy: {policy: "cross-origin"},
     crossOriginEmbedderPolicy: false
     }))
 app.use(xss())
