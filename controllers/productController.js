@@ -1,7 +1,8 @@
 const Product = require('../models/Product')
 const CustomErrors = require('../errors')
 const checkPermissions = require('../utils/checkPermission')
-const path = require('path')
+const fs = require('fs')
+const cloudinary = require('cloudinary').v2
 
 const getAllProducts = async (req, res) => {
     const { name, numFilter, sort, category } = req.query
@@ -116,11 +117,14 @@ const uploadImage = async (req, res) => {
 
     if(prodImage.size > max) throw new CustomErrors.BadRequest('Image cannot be bigger than 1mb')
 
-    const imagePath = path.join(__dirname, '../public/products/' + `${prodImage.name}`)
+    const result = await cloudinary.uploader.upload(req.files.image.tempFilePath, {
+        use_filename: true,
+        folder: 'file uploads'
+    })
 
-    await prodImage.mv(imagePath)
+    fs.unlinkSync(req.files.image.tempFilePath)
 
-    res.status(200).json({ src: `/products/${prodImage.name}` })
+    res.status(200).json({ src: result.secure_url })
 }
 
 module.exports = { getAllProducts, getSingleProduct, addProduct, deleteProduct, updateProduct, uploadImage }

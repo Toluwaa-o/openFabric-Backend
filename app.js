@@ -11,6 +11,12 @@ const cors = require('cors')
 const helmet = require('helmet')
 const xss = require('xss-clean')
 const mongoSanitize = require('express-mongo-sanitize')
+const cloudinary = require('cloudinary').v2
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_KEY,
+    api_secret: process.env.CLOUDINARY_SECRET
+})
 
 const db = require('./db/connectDb')
 const notFound = require('./middleware/notFound')
@@ -36,7 +42,7 @@ app.use(mongoSanitize())
 
 app.use(express.json())
 app.use(express.static('./public'))
-app.use(fileUpload())
+app.use(fileUpload({useTempFiles: true}))
 
 app.use(morgan('tiny'))
 app.use(cookieParser(process.env.JWT_SECRET))
