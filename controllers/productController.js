@@ -5,12 +5,12 @@ const fs = require('fs')
 const cloudinary = require('cloudinary').v2
 
 const getAllProducts = async (req, res) => {
-    const { title, numFilter, sort, category } = req.query
+    const { name, numFilter, sort, category } = req.query
 
     const queryObject = {}
 
-    if(title) {
-        queryObject.title = {$regex: title, $options: 'i'}
+    if(name) {
+        queryObject.title = {$regex: name, $options: 'i'}
     }
 
     if(numFilter) {
@@ -124,11 +124,7 @@ const uploadImage = async (req, res) => {
 
     fs.unlinkSync(req.files.image.tempFilePath)
 
-<<<<<<< HEAD
     res.status(200).json({ src: result.secure_url })
-=======
-    res.status(200).json({ src: `https://openfabric-backend-rtee.onrender.com/products/${prodImage.name}` })
->>>>>>> 8fff1b38cdb9f1f3d4daf69033f87c95106855a4
 }
 
 module.exports = { getAllProducts, getSingleProduct, addProduct, deleteProduct, updateProduct, uploadImage }
