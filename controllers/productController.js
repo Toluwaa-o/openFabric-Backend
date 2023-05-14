@@ -5,12 +5,12 @@ const fs = require('fs')
 const cloudinary = require('cloudinary').v2
 
 const getAllProducts = async (req, res) => {
-    const { name, numFilter, sort, category } = req.query
+    const { title, numFilter, sort, category } = req.query
 
     const queryObject = {}
 
-    if(name) {
-        queryObject.title = {$regex: name, $options: 'i'}
+    if(title) {
+        queryObject.title = {$regex: title, $options: 'i'}
     }
 
     if(numFilter) {
