@@ -61,7 +61,7 @@ const getSingleReview = async (req, res) => {
 const getProductReviews = async (req, res) => {
     const { id: productId } = req.params
 
-    const reviews = await Review.find({product: productId})
+    const reviews = await Review.find({product: productId}).populate({path: 'user', select: 'name'})
     if(reviews.length < 1 || !reviews) throw new CustomErrors.NotFound('No reviews found')
 
     res.status(200).json({ reviews })
