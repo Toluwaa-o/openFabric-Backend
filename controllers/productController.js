@@ -1,6 +1,5 @@
 const Product = require('../models/Product')
 const CustomErrors = require('../errors')
-const checkPermissions = require('../utils/checkPermission')
 const fs = require('fs')
 const cloudinary = require('cloudinary').v2
 

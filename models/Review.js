@@ -7,7 +7,8 @@ const ReviewSchema = new mongoose.Schema({
     },
     rating: {
         type: Number,
-        required: [true, 'Please provide a rating']
+        required: [true, 'Please provide a rating'],
+        enum: [1, 2, 3, 4 ,5]
     },
     title: {
         type: String,
