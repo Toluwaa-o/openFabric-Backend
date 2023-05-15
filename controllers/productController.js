@@ -36,7 +36,11 @@ const getAllProducts = async (req, res) => {
     }
 
     if(category) {
-        queryObject.category = category
+        if(category === 'all'){
+            return
+        }else {
+            queryObject.category = category
+        }
     }
 
     let prod = Product.find(queryObject).populate('reviews')
