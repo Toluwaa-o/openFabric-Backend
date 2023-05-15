@@ -16,14 +16,15 @@ const createOrder = async (req, res) => {
 
         if(!dbProduct) throw new CustomErrors.NotFound(`No product found with id ${item.product}`)
 
-        const { title, price, image, _id } = dbProduct
+        const { title, price, image, _id, discount } = dbProduct
+        const newPrice = price - ((discount/100)*price)
 
         const singleOrderItem = {
-            amount: item.amount, title, price, image, product: _id
+            amount: item.amount, title, price: newPrice, image, product: _id
         }
 
         orderItems = [...orderItems, singleOrderItem]
-        subTotal += (price * item.amount)  
+        subTotal += (newPrice * item.amount)  
       }
 
     const total = subTotal + tax + shippingFee
