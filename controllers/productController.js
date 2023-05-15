@@ -35,7 +35,7 @@ const getAllProducts = async (req, res) => {
         })
     }
 
-    if(category) {
+    if(category && category !== 'all') {
         queryObject.category = category
     }
 
