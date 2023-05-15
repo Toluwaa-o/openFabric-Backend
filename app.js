@@ -34,7 +34,7 @@ const app = express()
 mongoose.set('strictQuery', false)
 app.set('trust proxy', 1)
 app.use(cors({
-    origin: 'https://vercel.com/toluwaa-o/open-fabric-frontend',
+    origin: 'https://open-fabric-frontend.vercel.app/',
     credentials: true
     }))
 
