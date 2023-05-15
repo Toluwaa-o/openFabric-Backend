@@ -54,10 +54,12 @@ const getAllProducts = async (req, res) => {
     prod = prod.limit(limit).skip(skip)
 
     const products = await prod
+    const totalProds = await Product.countDocuments(queryObject)
+    const numOfPages = Math.ceil(totalProds/limit)
 
     if(products.length < 1 || !products) throw new CustomErrors.NotFound('No products available')
 
-    res.status(200).json({ products })
+    res.status(200).json({ products, numOfPages })
 }
 
 const getSingleProduct = async (req, res) => {
