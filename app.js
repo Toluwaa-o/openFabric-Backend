@@ -42,7 +42,7 @@ app.use(helmet({
     crossOriginResourcePolicy: {policy: "cross-origin"},
     crossOriginEmbedderPolicy: false
     }))
-app.use(xss())
+// app.use(xss())
 app.use(mongoSanitize())
 
 app.use(express.json())
